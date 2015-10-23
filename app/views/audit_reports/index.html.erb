@@ -1,0 +1,45 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Audit Reports</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Fire alarm system</th>
+      <th>Fire pump</th>
+      <th>Fire extenguisher</th>
+      <th>Fire hose cabin</th>
+      <th>Automatic sprinkle system</th>
+      <th>Fire susspension system</th>
+      <th>Restaurant fire susspension</th>
+      <th>Fire hybrands</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @audit_reports.each do |audit_report| %>
+      <tr>
+        <td><%= audit_report.fire_alarm_system %></td>
+        <td><%= audit_report.fire_pump %></td>
+        <td><%= audit_report.fire_extenguisher %></td>
+        <td><%= audit_report.fire_hose_cabin %></td>
+        <td><%= audit_report.automatic_sprinkle_system %></td>
+        <td><%= audit_report.fire_susspension_system %></td>
+        <td><%= audit_report.restaurant_fire_susspension %></td>
+        <td><%= audit_report.fire_hybrands %></td>
+        <td><%= link_to 'Show', audit_report %></td>
+        <td><%= link_to 'Edit', edit_audit_report_path(audit_report) %></td>
+        <td><%= link_to 'Destroy', audit_report, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Audit report', new_audit_report_path %>
+<ul>
+      <li><%= link_to "service_reports",   service_reports_path  %></li>
+  
+    </ul>

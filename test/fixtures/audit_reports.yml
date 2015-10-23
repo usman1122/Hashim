@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  fire_alarm_system: MyText
+  fire_pump: MyText
+  fire_extenguisher: MyText
+  fire_hose_cabin: MyText
+  automatic_sprinkle_system: MyText
+  fire_susspension_system: MyText
+  restaurant_fire_susspension: MyText
+  fire_hybrands: MyText
+
+two:
+  fire_alarm_system: MyText
+  fire_pump: MyText
+  fire_extenguisher: MyText
+  fire_hose_cabin: MyText
+  automatic_sprinkle_system: MyText
+  fire_susspension_system: MyText
+  restaurant_fire_susspension: MyText
+  fire_hybrands: MyText

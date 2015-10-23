@@ -1,0 +1,44 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Fire alarm system:</strong>
+  <%= @audit_report.fire_alarm_system %>
+</p>
+
+<p>
+  <strong>Fire pump:</strong>
+  <%= @audit_report.fire_pump %>
+</p>
+
+<p>
+  <strong>Fire extenguisher:</strong>
+  <%= @audit_report.fire_extenguisher %>
+</p>
+
+<p>
+  <strong>Fire hose cabin:</strong>
+  <%= @audit_report.fire_hose_cabin %>
+</p>
+
+<p>
+  <strong>Automatic sprinkle system:</strong>
+  <%= @audit_report.automatic_sprinkle_system %>
+</p>
+
+<p>
+  <strong>Fire susspension system:</strong>
+  <%= @audit_report.fire_susspension_system %>
+</p>
+
+<p>
+  <strong>Restaurant fire susspension:</strong>
+  <%= @audit_report.restaurant_fire_susspension %>
+</p>
+
+<p>
+  <strong>Fire hybrands:</strong>
+  <%= @audit_report.fire_hybrands %>
+</p>
+
+<%= link_to 'Edit', edit_audit_report_path(@audit_report) %> |
+<%= link_to 'Back', audit_reports_path %>

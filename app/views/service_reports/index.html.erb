@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Service Reports</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Itm</th>
+      <th>Comissining reports</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @service_reports.each do |service_report| %>
+      <tr>
+        <td><%= service_report.ITM %></td>
+        <td><%= service_report.comissining_reports %></td>
+        <td><%= link_to 'Show', service_report %></td>
+        <td><%= link_to 'Edit', edit_service_report_path(service_report) %></td>
+        <td><%= link_to 'Destroy', service_report, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Service report', new_service_report_path %>

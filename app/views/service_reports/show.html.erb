@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Itm:</strong>
+  <%= @service_report.ITM %>
+</p>
+
+<p>
+  <strong>Comissining reports:</strong>
+  <%= @service_report.comissining_reports %>
+</p>
+
+<%= link_to 'Edit', edit_service_report_path(@service_report) %> |
+<%= link_to 'Back', service_reports_path %>

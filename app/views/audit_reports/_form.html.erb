@@ -1,0 +1,49 @@
+<%= form_for(@audit_report) do |f| %>
+  <% if @audit_report.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@audit_report.errors.count, "error") %> prohibited this audit_report from being saved:</h2>
+
+      <ul>
+      <% @audit_report.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :fire_alarm_system %><br>
+    <%= f.text_area :fire_alarm_system %>
+  </div>
+  <div class="field">
+    <%= f.label :fire_pump %><br>
+    <%= f.text_area :fire_pump %>
+  </div>
+  <div class="field">
+    <%= f.label :fire_extenguisher %><br>
+    <%= f.text_area :fire_extenguisher %>
+  </div>
+  <div class="field">
+    <%= f.label :fire_hose_cabin %><br>
+    <%= f.text_area :fire_hose_cabin %>
+  </div>
+  <div class="field">
+    <%= f.label :automatic_sprinkle_system %><br>
+    <%= f.text_area :automatic_sprinkle_system %>
+  </div>
+  <div class="field">
+    <%= f.label :fire_susspension_system %><br>
+    <%= f.text_area :fire_susspension_system %>
+  </div>
+  <div class="field">
+    <%= f.label :restaurant_fire_susspension %><br>
+    <%= f.text_area :restaurant_fire_susspension %>
+  </div>
+  <div class="field">
+    <%= f.label :fire_hybrands %><br>
+    <%= f.text_area :fire_hybrands %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

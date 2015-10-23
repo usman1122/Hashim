@@ -1,0 +1,2 @@
+module AuditReportsHelper
+end
